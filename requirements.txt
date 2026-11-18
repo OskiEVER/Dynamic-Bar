@@ -1,0 +1,29 @@
+# DynamicBar - zależności (Windows 10/11, Python 3.12 x64 zalecany; winrt wspiera 3.9-3.13)
+# Instalacja:  pip install -r requirements.txt
+
+PySide6>=6.6,<7
+
+# strefy czasowe (zoneinfo w Windows nie ma własnej bazy)
+tzdata
+
+# sys_controls.py
+pycaw>=20230407
+comtypes>=1.2
+screen-brightness-control>=0.20
+wmi
+pywin32
+
+# media_player.py, sys_controls.py, system_monitor.py (WinRT) - NIE mieszaj z "winsdk"
+winrt-runtime>=2.0
+winrt-Windows.Foundation>=2.0
+winrt-Windows.Foundation.Collections>=2.0
+winrt-Windows.Media.Control>=2.0
+winrt-Windows.Storage.Streams>=2.0
+winrt-Windows.Devices.Radios>=2.0
+winrt-Windows.UI.Notifications>=2.0
+winrt-Windows.UI.Notifications.Management>=2.0
+
+# budowanie
+pyinstaller>=6.3
+
+# Uwaga: "requests" nie jest używany - cały kod korzysta z urllib (biblioteka standardowa).
