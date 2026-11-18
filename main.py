@@ -119,7 +119,7 @@ from widgets import (
 # Wymiary
 # --------------------------------------------------------------------------
 COLLAPSED_SIZE = (230, 38)
-EXPANDED_SIZE = (780, 290)  # szeroki nagłówek: 6 zakładek + „Przypnij” + zębatka muszą się zmieścić
+EXPANDED_SIZE = (730, 290)  # szeroki nagłówek: 6 zakładek + „Przypnij” + zębatka muszą się zmieścić
 RADIUS_COLLAPSED = 19.0
 RADIUS_EXPANDED = 28.0
 SCREEN_MARGIN = 12  # odstęp pigułki od krawędzi ekranu
